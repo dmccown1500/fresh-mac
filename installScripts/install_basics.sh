@@ -10,5 +10,4 @@ brew cask install google-chrome
 brew cask install spectacle
 brew cask install spotify
 brew cask install slack
-brew cask install lastpass
 brew cask install docker
