@@ -1,0 +1,16 @@
+{
+    "files.autoSave": "onFocusChange",
+    "eslint.autoFixOnSave": true,
+    "tslint.autoFixOnSave": true,
+    "tslint.configFile": "tslint.json",
+    "editor.minimap.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "files.trimTrailingWhitespace": true,
+    "jest.pathToConfig": "jest.config.js",
+    "relativePath.excludedExtensions": [
+        ".js",
+        ".jsx",
+        ".ts",
+        ".tsx"
+    ]
+}
