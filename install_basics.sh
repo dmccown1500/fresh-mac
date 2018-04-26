@@ -4,6 +4,7 @@ brew update
 brew install git
 brew install node
 sh ./install_nvm.sh
+sh ./install_rvm.sh
 brew install cask
 brew install lastpass-cli --with-pinentry
 brew cask install visual-studio-code

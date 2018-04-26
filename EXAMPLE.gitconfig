@@ -1,0 +1,17 @@
+[user]
+        name = Daniel McCown
+        email = daniel.mccown@gmail.com
+[alias]
+        co = checkout
+        ci = commit -m
+        st = status
+        br = branch
+        rc = rebase --continue
+        pf = push --force-with-lease
+        pullr = pull --rebase
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative #show pretty subway
+        oneline = log --oneline #shows a flattened subway
+        current-branch = rev-parse --abbrev-ref HEAD #prints the current branch
+        rhu = "!git reset --hard origin/$(git current-branch)"
+[merge]
+        conflictstyle = diff3
