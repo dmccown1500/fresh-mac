@@ -2,8 +2,8 @@
 
 brew update
 brew install git
-sh ./install_nvm.sh
-sh ./install_rvm.sh
+sh ./helperScripts/install_nvm.sh
+sh ./helperScripts/install_rvm.sh
 brew install cask
 brew cask install visual-studio-code
 brew cask install firefox
