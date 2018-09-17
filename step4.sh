@@ -1,10 +1,8 @@
 #!/bin/sh
 
-brew install git bash-completion
+brew install bash-completion
 
-LINE='if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi'
+LINE='[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion'
 if [ -f ~/.bash_profile ]; then
     grep -qF -- "$LINE" ~/.bash_profile || echo "$LINE" >> ~/.bash_profile
 else
