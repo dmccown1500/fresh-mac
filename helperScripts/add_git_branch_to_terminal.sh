@@ -1,15 +1,19 @@
 #!/bin/sh
 
-LINE1="parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}"
+mkdir ~/.zshConfig
+cd ~/.zshConfig
+git clone https://github.com/zsh-git-prompt/zsh-git-prompt.git
 
-LINE2='export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "'
+LINE1="source ~/.zshConfig/zsh-git-prompt/zshrc.sh
 
-if ! grep -qF -- "$LINE2" ~/.bash_profile; then
-  echo "Adding $LINE1 & $LINE2 to your ~./bash_profile"
-  echo "$LINE1" >>~/.bash_profile
-  echo "$LINE2" >>~/.bash_profile
+"
+
+LINE2="PROMPT='%B%m%~%b$(git_super_status) %# '"
+
+if ! grep -qF -- "$LINE2" ~/.zshrc; then
+  echo "Adding $LINE1 & $LINE2 to your ~/.zshrc"
+  echo "$LINE1" >>~/.zshrc
+  echo "$LINE2" >>~/.zshrc
 else
-  echo "$LINE1 is already in ~/.bash_profile"
+  echo "$LINE1 is already in ~/.zshrc"
 fi
