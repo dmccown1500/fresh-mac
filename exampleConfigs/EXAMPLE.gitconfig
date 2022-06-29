@@ -1,6 +1,6 @@
 [user]
         name = Daniel McCown
-        email = daniel.mccown@gmail.com
+        email = example@example.com
 [alias]
         co = checkout
         ci = commit -m
