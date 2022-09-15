@@ -14,3 +14,4 @@ brew install --cask aerial
 brew install --cask docker
 brew install --cask zoom
 brew install --cask webex-meetings
+brew install --cask microsoft-office

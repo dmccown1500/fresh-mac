@@ -16,3 +16,5 @@
         rhu = "!git reset --hard origin/$(git current-branch)"
 [merge]
         conflictstyle = diff3
+[push]
+        autoSetupRemote = true
